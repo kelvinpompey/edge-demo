@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
-  const apiResult = await fetch("http://localhost:3000/api/hello");
+  const apiResult = await fetch("https://edge-demo-syp.pages.dev/api/hello");
   const data = await apiResult.json();
 
   console.log("apiResult ", data);
